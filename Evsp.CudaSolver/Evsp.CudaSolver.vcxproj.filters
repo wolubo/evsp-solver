@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dummy.cpp" />
+    <ClCompile Include="RandomCpu.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="SolverFabric.cpp" />
+    <ClCompile Include="CuSolutionGenerator.cpp">
+      <Filter>AntColonyOptimization</Filter>
+    </ClCompile>
+    <ClCompile Include="CuSolutionGeneratorAcoCpu.cpp">
+      <Filter>AntColonyOptimization</Filter>
+    </ClCompile>
+    <ClCompile Include="CuAcoSolver.cpp">
+      <Filter>AntColonyOptimization</Filter>
+    </ClCompile>
+    <ClCompile Include="CuSaSolver.cpp">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClCompile>
+    <ClCompile Include="Circulation.cpp">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClCompile>
+    <ClCompile Include="Solutions.cpp">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClCompile>
+    <ClCompile Include="Solution.cpp">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClCompile>
+    <ClCompile Include="CirculationStats.cpp">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClCompile>
+    <ClCompile Include="BestSolutionManager.cpp">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClCompile>
+    <ClCompile Include="DepotTools.cpp" />
+    <ClCompile Include="PtnCreateEdgesCpu.cpp">
+      <Filter>AntColonyOptimization</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultLogger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Container">
+      <UniqueIdentifier>{3c4eff2f-46a5-40ba-8c0f-886f8388c1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{0c709a73-17dc-40a8-a4c1-985bfe1b922d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{b3362b7b-b913-43e9-8a97-8d76c1f5fb2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{65098858-7f48-404e-8739-8b6029bbf7c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AntColonyOptimization">
+      <UniqueIdentifier>{fc9366d2-c867-4ddb-a70d-1656608209f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimulatedAnnealing">
+      <UniqueIdentifier>{03ac4a30-4cee-4cbf-8148-26356506255f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="BinaryMatrix.cu">
+      <Filter>Container</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CudaCheck.cu">
+      <Filter>Base</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuEmptyTrips.cu">
+      <Filter>Model</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuServiceTrips.cu">
+      <Filter>Model</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuVehicleTypeGroups.cu">
+      <Filter>Model</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuVehicleTypes.cu">
+      <Filter>Model</Filter>
+    </CudaCompile>
+    <CudaCompile Include="TestDoubleLinkedList.cu">
+      <Filter>Test</Filter>
+    </CudaCompile>
+    <CudaCompile Include="TestRandomCuda.cu">
+      <Filter>Test</Filter>
+    </CudaCompile>
+    <CudaCompile Include="TestRandomMatrix.cu">
+      <Filter>Test</Filter>
+    </CudaCompile>
+    <CudaCompile Include="MatrixCreator.cu" />
+    <CudaCompile Include="CuStops.cu">
+      <Filter>Model</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuProblem.cu">
+      <Filter>Model</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSolution.cu" />
+    <CudaCompile Include="CuEdges.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuNodes.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSolver.cu" />
+    <CudaCompile Include="PtnKernels.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="ConnectionMatrix.cu" />
+    <CudaCompile Include="CuLockVector1.cu">
+      <Filter>Base</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Managed.cu">
+      <Filter>Base</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuEvaluationResult.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuLockMatrix1.cu">
+      <Filter>Base</Filter>
+    </CudaCompile>
+    <CudaCompile Include="RandomGpu.cu">
+      <Filter>Base</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuPlans.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuPlan.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="PrepareEdgeSelection.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="AntsRaceKernel.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="AntsRaceState.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSolutionEvaluatorAco.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSolutionPreparatorAcoKernels.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSolutionSelectorAco.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSolutionGeneratorAcoGpu.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSolutionPreparatorAco.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSelectionResult.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSolutionComparatorKernel.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuSolutionComparator.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuComparatorResult.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="PrevNextMatrix.cu" />
+    <CudaCompile Include="CuAction.cu">
+      <Filter>SimulatedAnnealing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="ServiceTripCostMatrix.cu" />
+    <CudaCompile Include="EmptyTripCostMatrix.cu" />
+    <CudaCompile Include="ConsumptionMatrix.cu" />
+    <CudaCompile Include="ChargingMatrix.cu" />
+    <CudaCompile Include="SolutionKeyData.cu" />
+    <CudaCompile Include="SolutionStats.cu">
+      <Filter>SimulatedAnnealing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CuConstructionGraph.cu">
+      <Filter>AntColonyOptimization</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinaryMatrix.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix3d.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaCheck.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CuEmptyTrips.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CuServiceTrips.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CuVehicleTypeGroups.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CuVehicleTypes.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleLinkedListResizable.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixCreator.h" />
+    <ClInclude Include="CuStops.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="EvspLimits.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CuProblem.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolution.h" />
+    <ClInclude Include="CuEdges.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuNodes.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuNodeType.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolver.h" />
+    <ClInclude Include="PtnKernels.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuMatrix1.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="CuMatrix2.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="CuVector2.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="CuVector1.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="CuBoolVector2.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="CuBoolVector1.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionMatrix.h" />
+    <ClInclude Include="CuLockVector1.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CuLockVector2.hpp">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Managed.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CuEvaluationResult.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuLockMatrix1.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomCpu.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomGpu.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="SolverFabric.h" />
+    <ClInclude Include="CuPlans.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuPlan.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatePlan.hpp">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="PrepareEdgeSelection.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolutionGenerator.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="AntsRaceKernel.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="AntsRaceState.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolutionEvaluatorAco.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolutionGeneratorAcoCpu.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolutionPreparatorAcoKernels.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolutionSelectorAco.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolutionGeneratorAcoGpu.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolutionPreparatorAco.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSelectionResult.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolutionComparatorKernel.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSolutionComparator.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuComparatorResult.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="Temperature.hpp">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleLinkedList2.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="CuDoubleLinkedList1.hpp">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="PrevNextMatrix.h" />
+    <ClInclude Include="CuAction.h">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClInclude>
+    <ClInclude Include="CuAcoSolver.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSaSolver.h">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSmartPtr.hpp">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceTripCostMatrix.h" />
+    <ClInclude Include="EmptyTripCostMatrix.h" />
+    <ClInclude Include="ConsumptionMatrix.h" />
+    <ClInclude Include="ChargingMatrix.h" />
+    <ClInclude Include="Solutions.h">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClInclude>
+    <ClInclude Include="Circulation.h">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution.h">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClInclude>
+    <ClInclude Include="CirculationStats.h">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClInclude>
+    <ClInclude Include="SolutionStats.h">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClInclude>
+    <ClInclude Include="BestSolutionManager.h">
+      <Filter>SimulatedAnnealing</Filter>
+    </ClInclude>
+    <ClInclude Include="SolutionKeyData.h" />
+    <ClInclude Include="DepotTools.h" />
+    <ClInclude Include="PtnCreateEdges.hpp">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="PtnCreateEdgesCpu.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultLogger.h" />
+    <ClInclude Include="CuConstructionGraph.h">
+      <Filter>AntColonyOptimization</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

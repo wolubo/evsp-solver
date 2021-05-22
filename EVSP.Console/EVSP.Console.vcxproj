@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8A635273-B083-41B4-9788-1F6EBF1AC15D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WoBo::EVSP::Console</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\wolfgang\Documents\boost;$(SolutionDir);$(IncludePath)</IncludePath>
+    <TargetName>EVSP</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\DEV\boost_1_75_0;$(SolutionDir);$(IncludePath)</IncludePath>
+    <TargetName>EVSP</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\wolfgang\Documents\boost;$(SolutionDir);$(IncludePath)</IncludePath>
+    <TargetName>EVSP</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\wolfgang\Documents\boost;$(SolutionDir);$(IncludePath)</IncludePath>
+    <TargetName>EVSP64</TargetName>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_ITERATOR_DEBUG_LEVEL=0;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\Program Files\boost\boost_1_76_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(CudaToolkitLibDir) $(CUDA_LIB_PATH) $(CUDA_PATH)\lib\$(PlatformName);C:\Users\wolfgang\Documents\boost\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cuda.lib;cudart.lib;cudadevrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>%windir%\system32\xcopy /Y /I $(MSBuildProjectDirectory)\config.ini $(OutputPath)
+%windir%\system32\xcopy /Y /I $(SolutionDir)\data\*.txt $(OutputPath)data</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_ITERATOR_DEBUG_LEVEL=0;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(CudaToolkitLibDir) $(CUDA_LIB_PATH) $(CUDA_PATH)\lib\$(PlatformName);C:\Users\wolfgang\Documents\boost\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cuda.lib;cudart.lib;cudadevrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>%windir%\system32\xcopy /Y /I $(MSBuildProjectDirectory)\config.ini $(OutputPath)
+%windir%\system32\xcopy /Y /I $(SolutionDir)\data\*.txt $(OutputPath)data</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_ITERATOR_DEBUG_LEVEL=0;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>cuda.lib;cudart.lib;cudadevrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CudaToolkitLibDir) $(CUDA_LIB_PATH) $(CUDA_PATH)\lib\$(PlatformName);C:\Users\wolfgang\Documents\boost\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>%windir%\system32\xcopy /Y /I $(MSBuildProjectDirectory)\config.ini $(OutputPath)
+%windir%\system32\xcopy /Y /I $(MSBuildProjectDirectory)\config.ini  $(SolutionDir)bin
+%windir%\system32\xcopy /Y /I $(SolutionDir)\data\*.txt $(OutputPath)data
+%windir%\system32\xcopy /Y /I $(SolutionDir)\data\*.txt $(SolutionDir)bin\data
+%windir%\system32\xcopy /Y /I $(OutputPath)EVSP.exe $(SolutionDir)bin
+%windir%\system32\xcopy /Y /I $(OutputPath)cudart32_80.dll $(SolutionDir)bin
+%windir%\system32\xcopy /Y /I $(OutputPath)cudart64_80.dll $(SolutionDir)bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_ITERATOR_DEBUG_LEVEL=0;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(CudaToolkitLibDir) $(CUDA_LIB_PATH) $(CUDA_PATH)\lib\$(PlatformName);C:\Users\wolfgang\Documents\boost\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cuda.lib;cudart.lib;cudadevrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>%windir%\system32\xcopy /Y /I $(MSBuildProjectDirectory)\config.ini $(OutputPath)
+%windir%\system32\xcopy /Y /I $(MSBuildProjectDirectory)\config.ini  $(SolutionDir)bin
+%windir%\system32\xcopy /Y /I $(SolutionDir)\data\*.txt $(OutputPath)data
+%windir%\system32\xcopy /Y /I $(SolutionDir)\data\*.txt $(SolutionDir)bin\data
+%windir%\system32\xcopy /Y /I $(OutputPath)EVSP64.exe $(SolutionDir)bin
+%windir%\system32\xcopy /Y /I $(OutputPath)cudart32_80.dll $(SolutionDir)bin
+%windir%\system32\xcopy /Y /I $(OutputPath)cudart64_80.dll $(SolutionDir)bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="ConsoleMenu.cpp" />
+    <ClCompile Include="Exceptions.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="RandomValuePicker.cpp" />
+    <ClCompile Include="TextFileReader.cpp" />
+    <ClCompile Include="TextFileWriter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="ConsoleMenu.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="RandomValuePicker.h" />
+    <ClInclude Include="TextFileReader.h" />
+    <ClInclude Include="TextFileWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EVSP.BaseClasses\EVSP.BaseClasses.vcxproj">
+      <Project>{739a701f-2d86-4c26-9e26-18d6d9da1029}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Evsp.CudaSolver\Evsp.CudaSolver.vcxproj">
+      <Project>{e478b5c2-f484-4507-8b09-cec55c8201ce}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\EVSP.Model\EVSP.Model.vcxproj">
+      <Project>{71676618-765e-4c1d-93c2-f7906179fcb8}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
